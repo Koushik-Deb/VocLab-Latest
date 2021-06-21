@@ -1,0 +1,25 @@
+<div class="card">
+    <h5 class="card-header"><b>{{ suggestion.TYPE }}</b> </h5>
+  <div class="card-body">
+    <h5 class="card-title">By: <i>{{ suggestion.username }}</i></h5>
+    <p class="card-text">
+        <b>Report :</b>
+         {{ suggestion.report }}
+      <h6 align="right"><b>Date: </b>{{ suggestion.date }}</h6>
+    </p>
+
+      <div align="right">
+          {% if suggestion.status=='US' %}
+              <a class="btn btn-primary" role="button"  onclick="myADD('{{ suggestion.id}}',1)">
+                  Add To TODO</a>
+          {% else %}
+              <a class="btn btn-primary" role="button"  onclick="myADD('{{ suggestion.id}}',2)">
+                  Back To Review</a>
+          {% endif %}
+          <a onclick="myADD('{{ suggestion.id }}',3)" class="btn btn-danger" role="button" >
+                    Delete</a>
+    </div>
+
+
+  </div>
+</div>

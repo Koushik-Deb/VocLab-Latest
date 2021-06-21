@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css" rel="stylesheet">
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/js/mdb.min.js"></script>
+
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VocLAB</title>
+</head>
+
+<body >
+<nav class="navbar navbar-expand-lg navbar-dark unique-color-dark">
+
+    <a class="navbar-brand" href="{{ url_for('hello_world') }}">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" height="60" alt="vlab logo">
+    </a>
+
+    <a class="navbar-brand" href="#">VocLAB</a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+
+
+
+    </ul>
+    </div>
+</nav>
+<div class="view" align="center" style="
+background-image: url('http://127.0.0.1:5000/static/img/cover2.jpg');
+background-repeat: no-repeat; background-size: cover;
+background-position: center center;">
+    <p style="margin-top: 15%;margin-bottom: 5%; margin-left: 5%; margin-right: 5%" align="center ">The GRE® (Graduate Record Exam) Test is the standardised test used to
+        <b>fetch admissions in various graduate schools or business graduate
+        schools in various countries, especially the United States.
+        More than 100,000 graduate school applicants from approximately 160
+        countries take the GRE General Test at 700 test centres. Aspirants
+        interested in pursuing a master's degree, specialised master's course,
+        MS, MBA, MEM or doctoral degree can sit for the GRE Test. In addition
+        to the GRE revised general test, there are six GRE subjects tests that
+        evaluate candidates’ knowledge in their respective field. GRE test is
+            conducted by ETS®(Educational Testing Service).</b>
+    </p>
+
+    <div style="margin-bottom: 2%; margin-left: 5%; margin-right: 5%">
+
+        <a  class="btn btn-outline-warning waves-effect" href="{{ url_for('login') }}">
+            Get Started</a>
+    </div>
+
+    <div style="margin-bottom: 2%; margin-left: 5%; margin-right: 5%">
+        <a class="btn btn-outline-success waves-effect"
+           " href="{{ url_for('dictionary_anon') }}">
+            Dictionary</a>
+
+    </div>
+
+    <div style="margin-bottom: 25%; margin-left: 5%; margin-right: 5%">
+        <a class="btn btn-outline-info waves-effect"
+           " href="{{ url_for('about') }}">
+            About Us</a>
+
+    </div>
+
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4" style="position: relative; ">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-12">
+          <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+
+            <!--Pinterest-->
+            <a class="gt-ic">
+              <i class="fa fa-github fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/">VocLAB.org</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+</body>
+</html>

@@ -1,0 +1,13 @@
+<div class="card" style="width: 70%" align="center">
+    <h5 class="card-header"><b>{{ word.word }}</b> <i>({{ word.TYPE }})</i> </h5>
+  <div class="card-body">
+    <h5 class="card-title">{{ word.meaning }}</h5>
+    <p class="card-text">
+        <b>Usage :</b>
+         <ul>
+            {% for usage in word.usages %}
+                <li >{{ usage }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
